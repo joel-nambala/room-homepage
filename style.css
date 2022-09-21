@@ -141,3 +141,30 @@ body {
   color: var(--Dark-Gray);
   font-weight: 500;
 }
+
+.nav-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.show-nav {
+  background-color: #fff;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+.show-nav a {
+  color: #333;
+  border-bottom: none;
+}
+
+.show-nav a:hover {
+  border-bottom: none;
+}
+
+.header-logo-close {
+  display: none;
+}

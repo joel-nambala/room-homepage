@@ -26,6 +26,9 @@ const btnRight = document.querySelector('.header-btn--right');
 const headerImg = document.querySelector('.header-img');
 const headerTitle = document.querySelector('.header-title');
 const headerText = document.querySelector('.header-text');
+const navMenu = document.querySelector('.nav-menu');
+const headerLogoClose = document.querySelector('.header-logo-close');
+const headerList = document.querySelector('.header-list');
 
 const showPage = function (page) {
   const item = data[page];
@@ -48,4 +51,14 @@ btnLeft.addEventListener('click', function () {
 
 window.addEventListener('load', function () {
   showPage(currentItem);
+});
+
+navMenu.addEventListener('click', function () {
+  headerList.style.display = 'flex';
+  headerList.classList.add('show-nav');
+});
+
+headerLogoClose.addEventListener('click', function () {
+  headerList.style.display = 'none';
+  headerList.classList.remove('show-nav');
 });
