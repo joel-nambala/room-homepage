@@ -1,0 +1,143 @@
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  margin: 0 3rem;
+  color: #333;
+}
+
+.header {
+  position: relative;
+}
+
+.header-nav {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header-item {
+  font-size: 1.8rem;
+}
+
+.header-logo {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.header-link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.header-slide {
+  display: flex;
+}
+
+.header-img {
+  width: 72rem;
+}
+
+.header-content {
+  padding: 4rem 3rem;
+  position: relative;
+}
+
+.header-title {
+  font-size: 4.6rem;
+  margin-bottom: 2rem;
+}
+
+.header-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: var(--Dark-Gray);
+  margin-bottom: 2rem;
+}
+
+.header-btn-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--Black);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.header-buttons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header-btn {
+  border: none;
+  background-color: var(--Black);
+  padding: 1rem 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header-btn:hover {
+  background-color: var(--Dark-Gray);
+}
+
+.about {
+  display: flex;
+}
+
+.about-img {
+  width: 37rem;
+  height: 30rem;
+}
+
+.about-content {
+  padding: 4rem;
+}
+
+.about-title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--Dark-Gray);
+  font-weight: 500;
+}
